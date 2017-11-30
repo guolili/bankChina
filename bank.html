@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="javascripts/app.js"></script>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="icon/iconfont.css">
+</head>
+<body>
+	<div class="wrap">
+		<header><i></i>
+			<a href="#"><img src="images/logo.png" alt=""></a>
+			<i></i>
+			<i class="iconfont">&#xe729;</i>
+			<i class="iconfont">&#xe6fb;</i>
+		</header>
+		<section>
+			<div class="banner swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<a href="#"><img src="images/ban_1.jpg" alt=""></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="images/ban_2.jpg" alt=""></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="images/ban_3.jpg" alt=""></a>
+					</div>
+					<div class="swiper-slide">
+						<a href="#"><img src="images/ban_4.jpg" alt=""></a>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="change">
+				<ul>
+					<li><i class="iconfont">&#xe705;</i><p><span>数据库发生爱河附近开始数据库链接而的开发</span><time>12432435345</time></p></li>
+					<li><i class="iconfont">&#xe713;</i><p><span>收到货附近的是否</span><time>45235463433</time></p></li>
+				</ul>
+			</div>
+			<div class="server">
+				<h3>便捷服务</h3>
+				<ul>
+					<li><span><i class="iconfont">&#xe711;</i></span><label>掌上银行下载</label></li>
+					<li><span><i class="iconfont">&#xe713;</i></span><label>掌上银行下载</label></li>
+					<li><span><i class="iconfont">&#xe717;</i></span><label>掌上银行下载</label></li>
+					<li><span><i class="iconfont">&#xe711;</i></span><label>掌上银行下载</label></li>
+					<li><span><i class="iconfont">&#xe711;</i></span><label>掌上银行下载</label></li>
+					<li><span><i class="iconfont">&#xe647;</i></span><label>掌上银行下载</label></li>
+					<li><span><i class="iconfont">&#xe614;</i></span><label>掌上银行下载</label></li>
+					<li><span><i class="iconfont">&#xe711;</i></span><label>掌上银行下载</label></li>
+				</ul>
+			</div>
+			<div class="list">
+				<div class="student">
+					<div class="stu">
+						<span>学生时代</span><i class="iconfont">&#xe704;</i>
+					</div>
+					<div class="stud render"></div>
+				</div>
+				<div class="student work">
+					<div class="stu">
+						<span>职场生涯</span><i class="iconfont">&#xe704;</i>
+					</div>
+					<div class="stud render"></div>
+				</div>
+				<div class="student family">
+					<div class="stu">
+						<span>品质家庭</span><i class="iconfont">&#xe704;</i>
+					</div>
+					<div class="stud render"></div>
+				</div>
+				<div class="student money">
+					<div class="stu">
+						<span>养老保险</span><i class="iconfont">&#xe704;</i>
+					</div>
+					<div class="stud render"></div>
+				</div>
+			</div>
+		</section>
+	</div>
+<script src="javascripts/swiper.min.js"></script>
+<script src="javascripts/zepto.min.js"></script>
+<script type="text/javascript">
+	var spr = new Swiper('.banner', {
+		autoplay: 2000,
+		loop: true,
+		pagination: '.swiper-pagination'
+	})
+	// 学生时代   职场生涯 品质家庭  养老保险
+	function reqes(adrs) {
+		return new Promise((resolve, reject) => {
+			let xhr = new XMLHttpRequest();
+			xhr.open('get', adrs, true);
+			xhr.send(null);
+			xhr.onreadystatechange = function () {
+				if (xhr.readystate === 4 && xhr.status === 200) {
+					resolve(xhr.responseText);
+				} else {
+					reject('error!!');
+				}
+			}
+		})
+	}	
+	function rendom(data) {
+		console.log(data);
+	}
+	
+</script>
+</body>
+</html>

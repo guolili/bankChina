@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box; }
+
+i {
+  font-size: 0.4rem !important; }
+
+header {
+  width: 100%;
+  height: 1.4rem;
+  background: #fff;
+  display: flex; }
+  header a {
+    flex: 3; }
+    header a img {
+      width: 100%;
+      height: 100%; }
+  header i {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+section {
+  width: 100%;
+  background: #ccc; }
+  section .banner {
+    width: 100%;
+    height: 3rem; }
+    section .banner .swiper-slide {
+      width: 100%; }
+      section .banner .swiper-slide a {
+        width: 100%; }
+        section .banner .swiper-slide a img {
+          width: 100%;
+          height: auto; }
+    section .banner .swiper-pagination-bullet {
+      width: 0.2rem;
+      height: 0.2rem; }
+  section .change {
+    width: 100%;
+    padding: 0.1rem 0;
+    background: #fff; }
+    section .change ul {
+      width: 100%; }
+      section .change ul li {
+        width: 100%;
+        display: flex;
+        padding: 0.1rem 0; }
+        section .change ul li:nth-child(1) {
+          border-bottom: 0.05rem dashed #ccc; }
+        section .change ul li i {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        section .change ul li p {
+          flex: 8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 0.33rem; }
+          section .change ul li p span {
+            flex: 7;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden; }
+          section .change ul li p time {
+            flex: 3;
+            color: #666;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+  section .server {
+    width: 100%;
+    margin-top: 0.2rem;
+    background: #fff; }
+    section .server h3 {
+      font-size: 0.5rem;
+      padding: 0.2rem 0;
+      border-bottom: 0.01rem solid #b6b3b3;
+      display: flex;
+      justify-content: center;
+      font-weight: normal; }
+    section .server ul {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      section .server ul li {
+        width: 25%;
+        padding: 0.3rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        section .server ul li span {
+          width: 1.4rem;
+          height: 1.4rem;
+          background: #dec;
+          border-radius: 0.9rem;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          section .server ul li span i {
+            color: #fff;
+            font-size: 1rem !important; }
+        section .server ul li label {
+          width: 1.6rem;
+          height: 1rem;
+          display: flex;
+          justify-content: center;
+          font-size: 0.4rem;
+          padding-left: 0.1rem; }
+  section .list {
+    width: 100%;
+    margin-top: 0.2rem;
+    background: #fff; }
+    section .list .student {
+      width: 96%;
+      padding: 2%;
+      display: flex;
+      flex-direction: column;
+      border-bottom: 0.01rem solid #ccc; }
+      section .list .student .stu {
+        width: 96%;
+        padding: 2%;
+        display: flex;
+        justify-content: space-between; }
+        section .list .student .stu span {
+          font-size: 0.45rem; }
+
+/*# sourceMappingURL=style.css.map */
